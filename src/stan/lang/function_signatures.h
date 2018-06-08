@@ -236,6 +236,7 @@ for (const auto& t : all_vector_types) {
   add("chi_square_rng", rng_return_type<double_type>(t), t);
  }
 add("cholesky_decompose", expr_type(matrix_type()), expr_type(matrix_type()));
+add("cholesky_decompose_gpu", expr_type(matrix_type()), expr_type(matrix_type()));
 add("choose", expr_type(int_type()), expr_type(int_type()), expr_type(int_type()));
 add("col", expr_type(vector_type()), expr_type(matrix_type()), expr_type(int_type()));
 add("cols", expr_type(int_type()), expr_type(vector_type()));
