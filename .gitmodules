@@ -1,4 +1,1 @@
-[submodule "lib/stan_math"]
-	path = lib/stan_math
-	url = https://github.com/bstatcomp/math
-	branch = gpu_cholesky_decompose
+
