@@ -87,8 +87,8 @@ namespace stan {
         if (this->nom_epsilon_ == 0 || this->nom_epsilon_ > 1e7)
           return;
 
-        this->hamiltonian_.sample_p(this->z_, this->rand_int_);
         this->hamiltonian_.init(this->z_, logger);
+        this->hamiltonian_.sample_p(this->z_, this->rand_int_);
 
         // Guaranteed to be finite if randomly initialized
         double H0 = this->hamiltonian_.H(this->z_);
@@ -108,8 +108,8 @@ namespace stan {
         while (1) {
           this->z_.ps_point::operator=(z_init);
 
-          this->hamiltonian_.sample_p(this->z_, this->rand_int_);
           this->hamiltonian_.init(this->z_, logger);
+          this->hamiltonian_.sample_p(this->z_, this->rand_int_);
 
           double H0 = this->hamiltonian_.H(this->z_);
 

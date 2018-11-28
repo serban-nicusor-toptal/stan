@@ -14,7 +14,7 @@ namespace stan {
      */
     template <class Model, class BaseRNG>
     class adapt_softabs_nuts: public softabs_nuts<Model, BaseRNG>,
-                              public stepsize_adapter {
+                              public stepsize_adapter { //stepsize_var_adapter
     public:
       adapt_softabs_nuts(const Model& model, BaseRNG& rng)
         : softabs_nuts<Model, BaseRNG>(model, rng) {}
