@@ -210,6 +210,48 @@ namespace stan {
                const bare_expr_type& arg_type7);
 
       /**
+       * Add a built-in function with the specifed name, result type,
+       * and argument types.
+       *
+       * @param name function name
+       * @param result_type function return type
+       * @param arg_type1 type of first argument
+       * @param arg_type2 type of second argument
+       * @param arg_type3 type of third argument
+       * @param arg_type4 type of fourth argument
+       * @param arg_type5 type of fifth argument
+       * @param arg_type6 type of sixth argument
+       * @param arg_type7 type of seventh argument
+       */
+      void add(const std::string& name,
+               const bare_expr_type& result_type,
+               const bare_expr_type& arg_type1,
+               const bare_expr_type& arg_type2,
+               const bare_expr_type& arg_type3,
+               const bare_expr_type& arg_type4,
+               const bare_expr_type& arg_type5,
+               const bare_expr_type& arg_type6,
+               const bare_expr_type& arg_type7,
+               const bare_expr_type& arg_type8,
+               const bare_expr_type& arg_type9,
+               const bare_expr_type& arg_type10,
+               const bare_expr_type& arg_type11,
+               const bare_expr_type& arg_type12,
+               const bare_expr_type& arg_type13,
+               const bare_expr_type& arg_type14,
+               const bare_expr_type& arg_type15,
+               const bare_expr_type& arg_type16,
+               const bare_expr_type& arg_type17,
+               const bare_expr_type& arg_type18,
+               const bare_expr_type& arg_type19,
+               const bare_expr_type& arg_type20,
+               const bare_expr_type& arg_type21,
+               const bare_expr_type& arg_type22,
+               const bare_expr_type& arg_type23,
+               const bare_expr_type& arg_type24,
+               const bare_expr_type& arg_type25);
+
+      /**
        * Add a built-in function with the specified name, a real
        * return type, and no arguments.
        *
