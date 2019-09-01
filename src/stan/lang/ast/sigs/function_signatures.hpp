@@ -246,10 +246,7 @@ namespace stan {
                const bare_expr_type& arg_type19,
                const bare_expr_type& arg_type20,
                const bare_expr_type& arg_type21,
-               const bare_expr_type& arg_type22,
-               const bare_expr_type& arg_type23,
-               const bare_expr_type& arg_type24,
-               const bare_expr_type& arg_type25);
+               const bare_expr_type& arg_type22);
 
       /**
        * Add a built-in function with the specified name, a real

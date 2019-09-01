@@ -213,10 +213,7 @@ namespace stan {
                const bare_expr_type& arg_type19,
                const bare_expr_type& arg_type20,
                const bare_expr_type& arg_type21,
-               const bare_expr_type& arg_type22,
-               const bare_expr_type& arg_type23,
-               const bare_expr_type& arg_type24,
-               const bare_expr_type& arg_type25) {
+               const bare_expr_type& arg_type22) {
       std::vector<bare_expr_type> arg_types;
       arg_types.push_back(arg_type1);
       arg_types.push_back(arg_type2);
@@ -240,9 +237,6 @@ namespace stan {
       arg_types.push_back(arg_type20);
       arg_types.push_back(arg_type21);
       arg_types.push_back(arg_type22);
-      arg_types.push_back(arg_type23);
-      arg_types.push_back(arg_type24);
-      arg_types.push_back(arg_type25);
       add(name, result_type, arg_types);
     }
 
